@@ -9,6 +9,9 @@ public class SinhVien {
     private int soLuongTin;
     private TinChi[] thongTinTinChi;
 
+    public SinhVien() {
+
+    }
     public SinhVien(String maSV, String hoTen, int soLuongTin, TinChi[] thongTinTinChi) {
         this.maSV = maSV;
         this.hoTen = hoTen;
@@ -16,13 +19,10 @@ public class SinhVien {
         this.thongTinTinChi = thongTinTinChi;
     }
 
-    public SinhVien(String maSV, String hoTen) {
+    public SinhVien(String maSV, String hoTen, int soLuongTin) {
         this.maSV = maSV;
         this.hoTen = hoTen;
-    }
-
-    public SinhVien() {
-
+        this.soLuongTin = soLuongTin;
     }
 
     public String getMaSV() {
@@ -69,22 +69,22 @@ public class SinhVien {
 
 
 
-    public void nhap(){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ma sinh vien: ");
-        maSV = sc.nextLine();
-        System.out.print("Ho ten: ");
-        hoTen = sc.nextLine();
-        System.out.print("So luong tin chi: ");
-        soLuongTin = sc.nextInt();
-        thongTinTinChi = new TinChi[soLuongTin];
-        for(int i = 0; i < soLuongTin ; i++){
-            thongTinTinChi[i] = new TinChi();
-            thongTinTinChi[i].nhapTinChi();
-        }
-
-
-    }
+//    public void nhap(){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Ma sinh vien: ");
+//        maSV = sc.nextLine();
+//        System.out.print("Ho ten: ");
+//        hoTen = sc.nextLine();
+//        System.out.print("So luong tin chi: ");
+//        soLuongTin = sc.nextInt();
+//        thongTinTinChi = new TinChi[soLuongTin];
+//        for(int i = 0; i < soLuongTin ; i++){
+//            thongTinTinChi[i] = new TinChi();
+//            thongTinTinChi[i].nhapTinChi();
+//        }
+//
+//
+//    }
 
     @Override
     public String toString() {
