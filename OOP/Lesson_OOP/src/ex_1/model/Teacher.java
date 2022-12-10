@@ -1,4 +1,4 @@
-package model;
+package ex_1.model;
 
 public class Teacher extends Person{
     private long luong;
@@ -6,7 +6,7 @@ public class Teacher extends Person{
     public Teacher() {
     }
 
-    public Teacher(String hoTen, int tuoi, String diaChi, long luong) {
+    public Teacher(String hoTen, int tuoi, Adress diaChi, long luong) {
         super(hoTen, tuoi, diaChi);
         this.luong = luong;
     }

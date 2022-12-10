@@ -1,6 +1,4 @@
-package model;
-
-import java.util.Scanner;
+package ex_1.model;
 
 public class Student extends Person {
     private double DiemLyThuyet;
@@ -9,7 +7,7 @@ public class Student extends Person {
     public Student() {
     }
 
-    public Student(String hoTen, int tuoi, String diaChi, double diemLyThuyet, double diemThucHanh) {
+    public Student(String hoTen, int tuoi, Adress diaChi, double diemLyThuyet, double diemThucHanh) {
         super(hoTen, tuoi, diaChi);
         DiemLyThuyet = diemLyThuyet;
         DiemThucHanh = diemThucHanh;

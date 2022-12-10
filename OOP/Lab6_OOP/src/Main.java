@@ -4,6 +4,7 @@ import bai2.service.SinhVienService;
 import bai3.Student;
 import bai3.service.StudentService;
 import bai4.controller.HomeController;
+import bai5.controller.HomeControllerBai5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +91,11 @@ public class Main {
 //        List<Student> studentList = student.stream().sorted().collect(Collectors.toList());
 
 //
-        HomeController controller = new HomeController();
-        controller.homeController();
+        //  === BAI 4 ===
+//        HomeController controller = new HomeController();
+//        controller.homeController();
+
+        HomeControllerBai5 controllerBai5 = new HomeControllerBai5();
+        controllerBai5.homeControllerBai5();
     }
 }

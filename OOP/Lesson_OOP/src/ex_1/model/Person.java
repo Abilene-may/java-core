@@ -1,14 +1,14 @@
-package model;
+package ex_1.model;
 
 public class Person {
     private String hoTen;
     private int tuoi;
-    private String diaChi;
+    private Adress diaChi;
 
     public Person() {
     }
 
-    public Person(String hoTen, int tuoi, String diaChi) {
+    public Person(String hoTen, int tuoi, Adress diaChi) {
         this.hoTen = hoTen;
         this.tuoi = tuoi;
         this.diaChi = diaChi;
@@ -30,11 +30,11 @@ public class Person {
         this.tuoi = tuoi;
     }
 
-    public String getDiaChi() {
+    public Adress getDiaChi() {
         return diaChi;
     }
 
-    public void setDiaChi(String diaChi) {
+    public void setDiaChi(Adress diaChi) {
         this.diaChi = diaChi;
     }
 
