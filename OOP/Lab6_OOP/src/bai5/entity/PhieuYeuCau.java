@@ -46,4 +46,9 @@ public class PhieuYeuCau {
                 ", soLuongMuon=" + soLuongMuon +
                 '}';
     }
+
+    public Long tonKho(){
+        return sachTruong.getSoLuong() - soLuongMuon;
+    }
+
 }

@@ -2,10 +2,9 @@ package bai5.controller;
 
 import bai5.entity.PhieuYeuCau;
 import bai5.entity.SachTruong;
-import bai5.entity.ThuVien;
 import bai5.service.phieuyeucau.PhieYeuCauImplement;
 import bai5.service.phieuyeucau.PhieuYeuCauService;
-import bai5.service.sachtruong.SachTruongInpl;
+import bai5.service.sachtruong.SachTruongImpl;
 import bai5.service.sachtruong.SachTruongService;
 
 import java.util.ArrayList;
@@ -14,9 +13,9 @@ import java.util.Scanner;
 
 public class HomeControllerBai5 {
 
-    SachTruongService sachTruongService = new SachTruongInpl();
+    SachTruongService sachTruongService = new SachTruongImpl();
     PhieuYeuCauService phieuYeuCauService = new PhieYeuCauImplement(sachTruongService);
-    SachTruong sachTruong = new SachTruong();
+    PhieuYeuCau phieuYeuCau = new PhieuYeuCau();
     List<PhieuYeuCau> phieuYeuCauList = new ArrayList<>();
 
     public void homeControllerBai5(){
@@ -38,7 +37,7 @@ public class HomeControllerBai5 {
     }
 
     public void taoPhieuYeuCau(){
-        PhieuYeuCau phieuYeuCau = phieuYeuCauService.taoPhieuYeuCau();
+        phieuYeuCau = phieuYeuCauService.taoPhieuYeuCau();
         phieuYeuCauList.add(phieuYeuCau);
     }
     public void inPhieuYeuCau(){
@@ -47,12 +46,13 @@ public class HomeControllerBai5 {
         });
     }
     public void tonKho(){
-        int tongSachMuon = 0;
-        for(PhieuYeuCau phieuYeuCau: phieuYeuCauList){
-            tongSachMuon += phieuYeuCau.getSoLuongMuon();
-        }
-        long soLuongSach = sachTruong.getSoLuong();
-        System.out.println("Tồn kho: " + (soLuongSach - tongSachMuon));
+//        Long tongSachMuon = 0L;
+//        for(PhieuYeuCau phieuYeuCau: phieuYeuCauList){
+//            tongSachMuon += phieuYeuCau.getSoLuongMuon();
+//        }
+//        Long soLuongSach = 0L;
+//        System.out.println("Tồn kho: " + (soLuongSach - tongSachMuon));
+        System.out.println("Tồn kho: " + phieuYeuCau.tonKho());
     }
 
     public void menu(){
@@ -60,8 +60,8 @@ public class HomeControllerBai5 {
         System.out.println("1 - Tạo phiếu yêu cầu");
         System.out.println("2 - In phiếu yêu cầu");
         System.out.println("3 - Thông tin tồn kho");
-        System.out.println("Nhập số bất kỳ để thoát");
-        System.out.print("Nhập lựa chọn của bạn: ");
+        System.out.println(" Nhập số bất kỳ để thoát");
+        System.out.print(" Nhập lựa chọn của bạn: ");
     }
 
 }

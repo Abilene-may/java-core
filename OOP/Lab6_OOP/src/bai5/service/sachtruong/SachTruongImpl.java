@@ -1,11 +1,10 @@
 package bai5.service.sachtruong;
 
 import bai5.entity.SachTruong;
-import bai5.entity.ThuVien;
 
 import java.util.Scanner;
 
-public class SachTruongInpl implements SachTruongService {
+public class SachTruongImpl implements SachTruongService {
 
     @Override
     public SachTruong themSach() {
@@ -19,9 +18,10 @@ public class SachTruongInpl implements SachTruongService {
         System.out.print("Năm xuất bản: ");
         int namXuatBan = sc.nextInt();
         System.out.print("Số lượng: ");
-        int soLuong = sc.nextInt();
+        Long soLuong = sc.nextLong();
+        sc.nextLine();
         System.out.print("Vị trí: ");
-        int viTri = sc.nextInt();
+        String viTri = sc.nextLine();
         System.out.print("Số trang: ");
         long soTrang = sc.nextLong();
         sc.nextLine();

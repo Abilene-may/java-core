@@ -5,14 +5,14 @@ public class ThuVien {
     private String tenSach;
     private String nhaXuatBan;
     private int namXuatBan;
-    private int soLuong;
-    private int viTri;
+    private Long soLuong;
+    private String viTri;
 
     public ThuVien() {
     }
 
     public ThuVien(String maSach, String tenSach, String nhaXuatBan,
-                   int namXuatBan, int soLuong, int viTri) {
+                   int namXuatBan, Long soLuong, String viTri) {
         this.maSach = maSach;
         this.tenSach = tenSach;
         this.nhaXuatBan = nhaXuatBan;
@@ -53,19 +53,31 @@ public class ThuVien {
         this.namXuatBan = namXuatBan;
     }
 
-    public int getSoLuong() {
+    public Long getSoLuong() {
         return soLuong;
     }
 
-    public void setSoLuong(int soLuong) {
+    public void setSoLuong(Long soLuong) {
         this.soLuong = soLuong;
     }
 
-    public int getViTri() {
+    public String getViTri() {
         return viTri;
     }
 
-    public void setViTri(int viTri) {
+    public void setViTri(String viTri) {
         this.viTri = viTri;
+    }
+
+    @Override
+    public String toString() {
+        return "ThuVien{" +
+                "maSach='" + maSach + '\'' +
+                ", tenSach='" + tenSach + '\'' +
+                ", nhaXuatBan='" + nhaXuatBan + '\'' +
+                ", namXuatBan=" + namXuatBan +
+                ", soLuong=" + soLuong +
+                ", viTri='" + viTri + '\'' +
+                '}';
     }
 }

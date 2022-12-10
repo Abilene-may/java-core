@@ -8,7 +8,7 @@ public class SachTruong extends ThuVien{
     }
 
     public SachTruong(String maSach, String tenSach, String nhaXuatBan, int namXuatBan,
-                      int soLuong, int viTri, long soTrang, String tinhTrang) {
+                      Long soLuong, String viTri, long soTrang, String tinhTrang) {
         super(maSach, tenSach, nhaXuatBan, namXuatBan, soLuong, viTri);
         this.soTrang = soTrang;
         this.tinhTrang = tinhTrang;
@@ -30,4 +30,11 @@ public class SachTruong extends ThuVien{
         this.tinhTrang = tinhTrang;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "SachTruong{" +
+                "soTrang=" + soTrang +
+                ", tinhTrang='" + tinhTrang + '\'' +
+                '}';
+    }
 }

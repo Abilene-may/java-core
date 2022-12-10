@@ -11,7 +11,7 @@ public abstract class NhanVien {
     private String email;
     private long Salary;
     //regex
-    String EMAIL_PATTERN =  
+    String EMAIL_PATTERN =
     "^[a-zA-Z][\\w-] + @([\\w] + \\.[\\w] + |\\.[\\w]{2,}\\.[\\w]{2,})$";
 
     public NhanVien() {
@@ -102,4 +102,6 @@ public abstract class NhanVien {
                 "\n Basic Salary:   " + Salary);
     }
 
+    private class String {
+    }
 }
