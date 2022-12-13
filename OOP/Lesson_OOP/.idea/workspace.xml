@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fdfde044-08a1-4dc7-a421-ca1dc1cdda2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Lesson_OOP/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Lesson_OOP/lesson1/Adress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Lesson_OOP/lesson1/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Lesson_OOP/lesson1/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Lesson_OOP/lesson1/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson1/Adress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson1/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6_OOP/out/production/bai1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6_OOP/out/production/bai1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6_OOP/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6_OOP/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6_OOP/src/bai5/service/phieuyeucau/PhieYeuCauImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6_OOP/src/bai5/service/phieuyeucau/PhieYeuCauImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson_OOP/model/Adress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex_1/model/Adress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex_1/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex_1/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex_1/model/Teacher.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IkPymkHS1IyEZ3z40STX9BETbz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdfde044-08a1-4dc7-a421-ca1dc1cdda2c" name="Changes" comment="" />
+      <created>1670722866391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670722866391</updated>
+    </task>
+    <servers />
+  </component>
+</project>

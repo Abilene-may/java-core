@@ -6,10 +6,10 @@ import bai5.service.sachtruong.SachTruongService;
 
 import java.util.Scanner;
 
-public class PhieYeuCauImplement implements PhieuYeuCauService {
+public class PhieuYeuCauImpl implements PhieuYeuCauService {
     private final SachTruongService sachTruongService;
 
-    public PhieYeuCauImplement( SachTruongService sachTruongService) {
+    public PhieuYeuCauImpl(SachTruongService sachTruongService) {
         this.sachTruongService = sachTruongService;
     }
 
@@ -19,8 +19,8 @@ public class PhieYeuCauImplement implements PhieuYeuCauService {
         PhieuYeuCau phieuYeuCau = new PhieuYeuCau();
 
         // Tạo phiếu yêu cầu
-        // Nhập id
-        System.out.print("ID: ");
+        // Nhập mã phiếu
+        System.out.print("Mã phiếu: ");
         long id = sc.nextLong();
         phieuYeuCau.setId(id);
 

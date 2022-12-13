@@ -1,4 +1,4 @@
-package ex_1.model;
+package lesson1;
 
 public class Teacher extends Person{
     private long luong;

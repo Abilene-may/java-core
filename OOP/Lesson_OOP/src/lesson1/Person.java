@@ -1,5 +1,4 @@
-package ex_1.model;
-
+package lesson1;
 public class Person {
     private String hoTen;
     private int tuoi;

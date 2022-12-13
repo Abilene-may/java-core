@@ -1,8 +1,7 @@
 package bai5.controller;
 
 import bai5.entity.PhieuYeuCau;
-import bai5.entity.SachTruong;
-import bai5.service.phieuyeucau.PhieYeuCauImplement;
+import bai5.service.phieuyeucau.PhieuYeuCauImpl;
 import bai5.service.phieuyeucau.PhieuYeuCauService;
 import bai5.service.sachtruong.SachTruongImpl;
 import bai5.service.sachtruong.SachTruongService;
@@ -14,7 +13,7 @@ import java.util.Scanner;
 public class HomeControllerBai5 {
 
     SachTruongService sachTruongService = new SachTruongImpl();
-    PhieuYeuCauService phieuYeuCauService = new PhieYeuCauImplement(sachTruongService);
+    PhieuYeuCauService phieuYeuCauService = new PhieuYeuCauImpl(sachTruongService);
     PhieuYeuCau phieuYeuCau = new PhieuYeuCau();
     List<PhieuYeuCau> phieuYeuCauList = new ArrayList<>();
 

@@ -1,15 +1,4 @@
-import bai1.HinhChuNhat;
-import bai2.SinhVien;
-import bai2.service.SinhVienService;
-import bai3.Student;
-import bai3.service.StudentService;
-import bai4.controller.HomeController;
-import bai5.controller.HomeControllerBai5;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
+import bai6.controller.Bai6Controller;
 
 public class Main {
     public static void main(String[] args) {
@@ -95,7 +84,25 @@ public class Main {
 //        HomeController controller = new HomeController();
 //        controller.homeController();
 
-        HomeControllerBai5 controllerBai5 = new HomeControllerBai5();
-        controllerBai5.homeControllerBai5();
+        // === BAI 5 ===
+//        HomeControllerBai5 controllerBai5 = new HomeControllerBai5();
+//        controllerBai5.homeControllerBai5();
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Nhập số phần tử mảng ");
+//
+//        try {
+//            int size = sc.nextInt();
+//            int[] arrNumber = new int[size];
+//        }catch (NegativeArraySizeException e1){
+//            System.out.println("Kích thức mảng là một số dương");
+//        }catch (InputMismatchException e2){
+//            System.out.println("Kích thước mảng phải là số ");
+//        }
+
+        Bai6Controller bai6Controller = new Bai6Controller();
+        bai6Controller.homeControllerBai6();
     }
+
+
 }
