@@ -9,6 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+
 public class ThuVien {
     private List<SachGiaoKhoa> sachGiaoKhoaList;
     private List<TapChi> tapChiList;
