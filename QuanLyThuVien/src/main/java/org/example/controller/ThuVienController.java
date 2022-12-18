@@ -6,7 +6,6 @@ import org.example.entity.TapChi;
 import org.example.entity.ThuVien;
 
 import java.time.LocalDate;
-import java.time.Year;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -24,6 +23,7 @@ public class ThuVienController {
         while (!isCheck) {
             menu();
             int luaChon = sc.nextInt();
+            sc.nextLine();
             switch (luaChon) {
                 // Lấy thông tin sách theo từng thể loại (SGK, Tạp chí, báo, Tài liệu điện tử)
                 case 1:
@@ -39,6 +39,7 @@ public class ThuVienController {
                 case 2:
                     System.out.print("Nhập thể loại bạn muốn tìm: ");
                     String theLoai = sc.nextLine();
+                    thongTinSachTheoTheLoai(theLoai);
                     break;
                 case 3:
                     System.out.println(" 5 tài liệu điện tử được tải nhiều nhất");
@@ -57,29 +58,29 @@ public class ThuVienController {
                         }
                     }
                     System.out.println(Arrays.toString(tapChiList.toArray()));
-
-
             }
 
         }
 
     }
 
-//    public void thongTinSachTheoTheLoai(String theLoai){
-//        if(theLoai.equals("Sach giao khoa"))
-//        {
-//            System.out.println(thuVien.getSachGiaoKhoaList().toString());
-//        }
-//        if(theLoai.equals("Tap chi")) {
-//            System.out.println(thuVien.getTapChiList().toString());
-//        }
-//        if(theLoai.equals("Bao")) {
-//            System.out.println(thuVien.getTapChiList().toString());
-//        }
-//        if(theLoai.equals("Tai lieu dien tu"))  {
-//            System.out.println(thuVien.getTaiLieuDienTuList().toString());
-//        }
-//    }
+    public void thongTinSachTheoTheLoai(String theLoai) {
+        switch (theLoai) {
+            case "Sach giao khoa", "sach giao khoa", "sgk":
+                System.out.println(thuVien.getSachGiaoKhoaList().toString());
+                break;
+            case "Tap chi", "tap chi", "Bao", "bao":
+                System.out.println(thuVien.getTapChiList().toString());
+                break;
+            case "Tai lieu dien tu", "tai lieu dien tu":
+                System.out.println(thuVien.getTaiLieuDienTuList().toString());
+                break;
+            default:
+                System.out.println("Thư viện không có thể loại " + theLoai);
+                break;
+
+        }
+    }
 
     public void menu() {
         System.out.print("------------------------------\n" +
@@ -89,4 +90,5 @@ public class ThuVienController {
                 "4. In tạp chí được xuất bản trong năm hiện tại\n" +
                 " Nhập lựa chọn của bạn: ");
     }
+
 }
