@@ -2,12 +2,10 @@ package org.example.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class TapChi {
@@ -19,7 +17,8 @@ public class TapChi {
     private int soTrang;
     private int soLuong;
 
-    public static List<TapChi> taoListTapChi() {
+
+    public static List<TapChi> getListTapChi() {
         List<TapChi> tapChis = new ArrayList<>();
         tapChis.add(new TapChi(221L, "Thoi trang hom nay", "toa soan ABC", 2022,
                 "Tap chi", 15, 50));

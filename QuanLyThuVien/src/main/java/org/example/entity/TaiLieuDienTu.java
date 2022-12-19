@@ -21,7 +21,7 @@ public class TaiLieuDienTu {
     private Long dungLuong;
     private Long luotTai;
 
-    public static List<TaiLieuDienTu> taoListTaiLieu() {
+    public static List<TaiLieuDienTu> getListTaiLieu() {
         List<TaiLieuDienTu> taiLieuDienTuList = new ArrayList<>();
         taiLieuDienTuList.add(new TaiLieuDienTu(331L, "Java", "John", 2021,
                 LocalDate.of(2021, 12, 22), "Tai lieu", 500L, 12000L));

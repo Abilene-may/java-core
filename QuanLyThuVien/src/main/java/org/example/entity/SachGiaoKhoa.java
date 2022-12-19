@@ -5,7 +5,6 @@ import lombok.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class SachGiaoKhoa {
@@ -18,7 +17,7 @@ public class SachGiaoKhoa {
     private int soTrang;
     private int soLuong;
 
-    public static List<SachGiaoKhoa> taoListSGK() {
+    public static List<SachGiaoKhoa> getListSGK() {
         List<SachGiaoKhoa> sachGiaoKhoa = new ArrayList<>();
         sachGiaoKhoa.add(new SachGiaoKhoa(111L, "Hoa hoc", "Sach giao khoa", "Thu Trang",
                 2018, "Kim Dong", 120, 12));
