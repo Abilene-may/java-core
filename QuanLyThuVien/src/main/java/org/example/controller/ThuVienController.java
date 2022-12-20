@@ -11,9 +11,9 @@ import java.util.stream.Collectors;
 
 public class ThuVienController {
     // 1. Tạo 1 danh sách <List> các loại sách trong thư viện
-    private List<SachGiaoKhoa> sachGiaoKhoas = SachGiaoKhoa.taoListSGK();
-    private List<TapChi> tapChis = TapChi.taoListTapChi();
-    private List<TaiLieuDienTu> taiLieuDienTuList = TaiLieuDienTu.taoListTaiLieu();
+    private List<SachGiaoKhoa> sachGiaoKhoas = SachGiaoKhoa.getListSGK();
+    private List<TapChi> tapChis = TapChi.getListTapChi();
+    private List<TaiLieuDienTu> taiLieuDienTuList = TaiLieuDienTu.getListTaiLieu();
     private ThuVien thuVien = new ThuVien(sachGiaoKhoas, tapChis, taiLieuDienTuList);
 
 
